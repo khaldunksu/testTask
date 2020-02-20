@@ -14,19 +14,21 @@
     background-color: salmon;
   }
 }
-.box>*:first-child {
-    align-self: stretch;
+
+.box > *:first-child {
+  align-self: stretch;
 }
+
 .box .selected {
-    align-self: center;
-    width: 400px;
-    height: 200px;
-    background-color: salmon;
+  align-self: center;
+  width: 400px;
+  height: 200px;
+  background-color: salmon;
 }
 
 .timer {
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #doc_time {

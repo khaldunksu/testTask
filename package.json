@@ -38,17 +38,14 @@
     "lint-staged": "^8.1.6",
     "stylelint": "^10.0.1",
     "stylelint-config-recommended-scss": "^3.3.0",
-    "stylelint-scss": "^3.6.1"
+    "stylelint-scss": "^3.6.1",
+    "eslint.enable": "false"
   },
   "dependencies": {},
   "lint-staged": {
     "linters": {
       "*.scss": [
         "stylelint",
-        "git add"
-      ],
-      "*.js": [
-        "eslint",
         "git add"
       ],
       "*.html": [
