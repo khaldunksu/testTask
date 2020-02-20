@@ -1,0 +1,70 @@
+.popover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.modal_content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  background-color: rgb(190, 186, 186);
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: anim;
+  animation-duration: 0.5s
+}
+
+
+
+
+
+#myModal {
+  display: none;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  color: white;
+}
+
+.modal_body {
+  padding: 15px;
+}
+
+#popover_button {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    background-color: rgb(252, 252, 252);
+  }
+}
+
+
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes anim {
+  from { opacity:0}
+  to { opacity:1}
+}
+

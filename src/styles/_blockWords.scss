@@ -1,0 +1,13 @@
+.block_words {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &_item {
+    font-size: 20px;
+    padding-left: 10px;
+    &:nth-child(2n) {
+      color: blue;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 40px 80px;
+  &__scroll {
+    display: flex;
+    flex-direction: row;
+
+  }
+}
+
+.icon {
+  padding: 0 7px;
+}
+
+@media screen and (max-width: 999px) {
+  .header__scroll {
+    overflow-x: scroll;
+  }
+}
+

@@ -1,0 +1,35 @@
+.box {
+  display: flex;
+  align-items: flex-start;
+  height: 600px;
+  justify-content: center;
+  &__one {
+    width: 200px;
+    height: 400px;
+    background-color: royalblue;
+  }
+  &__two {
+    width: 400px;
+    height: 200px;
+    background-color: salmon;
+  }
+}
+.box>*:first-child {
+    align-self: stretch;
+}
+.box .selected {
+    align-self: center;
+    width: 400px;
+    height: 200px;
+    background-color: salmon;
+}
+
+.timer {
+ display: flex;
+ justify-content: center;
+}
+
+#doc_time {
+  color: black;
+  font-size: 26px;
+}

@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#preloader {
+  text-align: center;
+  padding: 15px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: white;
+  cursor: pointer;
+  width: 150px;
+  outline: none;
+  transition-property: background-color;
+  transition-duration: 3s;
+  &:hover {
+    background-color: inherit;
+    border: 2px solid white;
+  }
+}
+#content {
+  display: none;
+  margin-top: 50px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  width: 400px;
+}
+
+
+
+

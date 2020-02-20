@@ -1,6 +1,12 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "button";
+@import "tabs";
+@import "popover";
+@import "blockWords";
+@import "box";
 
 body {
   background: $c-gray;

@@ -1,14 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <h1>testTak</h1>
 
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="https://kit.fontawesome.com/a6e78e26c6.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__icon_apple"><img src="./images/iconfinder_16-apple_104490.png" alt="apple"></div>
+    <div class="header__scroll">
+      <img src="./images/iconfinder_36-android_104471 (2).png" alt="android" class="icon">
+      <img src="./images/iconfinder_Linux_-_Tux_367633 (2).png" alt="linux" class="icon" />
+      <img src="./images/iconfinder_32-windows8_104472 (2).png" alt="window" class="icon" />
+      <img src="./images/iconfinder_36-android_104471 (2).png" alt="android" class="icon" />
+      <img src="./images/iconfinder_Linux_-_Tux_367633 (2).png" alt="linux" class="icon" />
+      <img src="./images/iconfinder_32-windows8_104472 (2).png" alt="window" class="icon">
+      <img src="./images/iconfinder_36-android_104471 (2).png" alt="android" class="icon">
+      <img src="./images/iconfinder_Linux_-_Tux_367633 (2).png" alt="linux" class="icon">
+      <img src="./images/iconfinder_32-windows8_104472 (2).png" alt="window" class="icon">
+      <img src="./images/iconfinder_36-android_104471 (2).png" alt="android" class="icon">
+      <img src="./images/iconfinder_Linux_-_Tux_367633 (2).png" alt="linux" class="icon">
+      <img src="./images/iconfinder_32-windows8_104472 (2).png" alt="window" class="icon">
+    </div>
+  </header>
+  <main>
+    <!-- <div class="prealod">
+      <div class="load"></div>
+    </div>--->
+
+    <div class="button">
+      <button id="preloader">PRELOADER</button>
+      <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nunc gravida, arcu nec pharetra facilisis, nisi nisi rutrum dui,
+        at sollicitudin lectus ante sit amet purus.
+        Donec in ex ut turpis suscipit dapibus. </div>
+    </div>
+    <script>
+      preloader.onclick = function () {
+        display = document.getElementById("content").style.display;
+        if (display == 'none') {
+          document.getElementById("content").style.display = 'block';
+        } else {
+          document.getElementById("content").style.display = 'none';
+        }
+      };
+    </script>
+
+    <section class="tabs">
+      <div class="tab_header">
+        <div class="tab" data-tab="0"><i class="fas fa-mobile"></i>iPhone</div>
+        <div class="tab" data-tab="1"><i class="fas fa-robot"></i>Android</div>
+        <div class="tab" data-tab="2"><i class="fab fa-linux"></i>Linux</div>
+        <div class="tab" data-tab="3"><i class="fab fa-windows"></i>Windows</div>
+        <div class="tab" data-tab="4"><i class="fas fa-robot"></i>Android</div>
+      </div>
+      <div class="tabs_body">
+        <div class="content-tab">iPhone</div>
+        <div class="content-tab">android</div>
+        <div class="content-tab">linux</div>
+        <div class="content-tab">windows</div>
+        <div class="content-tab">android</div>
+      </div>
+    </section>
+
+    <section class="popover">
+      <button id="popover_button">
+        <i class="fas fa-info"></i>
+      </button>
+      <div id="myModal" class="modal">
+        <div class="modal_content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal_body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Nunc gravida, arcu nec pharetra facilisis, nisi nisi rutrum dui,
+              at sollicitudin lectus ante sit amet purus.
+              Donec in ex ut turpis suscipit dapibus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block_words">
+      <p class="block_words_item">Lorem</p>
+      <p class="block_words_item">dolor</p>
+      <p class="block_words_item">sit</p>
+      <p class="block_words_item">amet</p>
+      <p class="block_words_item">consectetur</p>
+      <p class="block_words_item">adipiscing</p>
+      <p class="block_words_item">elit</p>
+      <p class="block_words_item">Nunc</p>
+      <p class="block_words_item">adipiscing</p>
+      <p class="block_words_item">elit</p>
+      <p class="block_words_item">Nunc</p>
+    </section>
+
+
+    <section class="box">
+      <div class="box__one">One</div>
+      <div class="box__two">Two</div>
+      <div class="selected">Three</div>
+    </section>
+
+    <section class="timer">
+      <span id="doc_time">
+    </section>
+    </span>
+  </main>
+</body>
 </html>
