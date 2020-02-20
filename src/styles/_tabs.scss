@@ -1,5 +1,5 @@
 .tabs {
-  margin: 40px 50px;
+  margin: 40px 80px;
   background-color: rgb(92, 92, 92);
   border-radius: 10px;
 }
@@ -35,7 +35,8 @@
   z-index: 1;
 }
 
-.headerTab {
+.tab_header{
+  left: 30px;
   position: relative;
   z-index: 2;
 }
